@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.container {
+  background-color: #e0e0e0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.container-nav {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navegaçao {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navegaçao a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.navegaçao a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.bem-vindo {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#bem-vindo-titulo {
+  max-width: 500px;
+  text-align: center;
+}
+
+#bem-vindo-titulo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#bem-vindo-titulo p {
+  font-size: 1.2rem;
+}
+
+.bem-vindo img {
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.bem-vindo img:hover {
+  transform: scale(1.05);
+}
+
+
+.especialidades {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.especialidades h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+
+.card {
+  background-color: #333;
+  color: #fff;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card a button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card a button:hover {
+  background-color: #c62828;
+  color: #fff;
+}
+
+
+.localizacao {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.localizacao h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.localizacao iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+main section:nth-last-child(2),
+main section:nth-last-child(1) {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+main section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+main section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+main section p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin-right: 20px;
+  z-index: 100;
+  width: 80px;
+}
+
+.whatsapp-float img{
+    width:80px;
+}
+
+@media (max-width: 788px) {
+
+    .whatsapp-float{
+        display:none;
+    }
+
+  .bem-vindo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #bem-vindo-titulo {
+    margin: 0;
+  }
+
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+
+    .whatsapp-float{
+        display:none;
+    }
+
+  .navegaçao {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navegaçao a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .especialidades h1 {
+    font-size: 2rem;
+  }
+
+  #bem-vindo-titulo h1 {
+    font-size: 2rem;
+  }
+}
